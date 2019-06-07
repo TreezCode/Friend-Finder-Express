@@ -21,7 +21,7 @@ module.exports = function (app) {
 
         // Create variables to hold best match data
         let matchIndex = 0;
-        let minDifference = 40;
+        let minDifference = 500;
         
         let tilde = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
