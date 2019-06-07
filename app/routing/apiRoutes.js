@@ -1,4 +1,5 @@
 
+// Dependencies
 const data = require("../data/friends");
 
 module.exports = function (app) {
