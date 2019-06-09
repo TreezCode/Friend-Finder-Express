@@ -3,16 +3,7 @@
 $("#submit").on("click", function(event) {
     event.preventDefault();
 
-    // Input validation
-    let valid = true;
-
-    $(".form-control").each(function() {
-        if ($(this).val() === "") {
-            valid = false;
-        }
-    });
-
-    if (valid) {
+    // if (valid) {
 
         // Cap user input
         let userInput = {
@@ -36,14 +27,16 @@ $("#submit").on("click", function(event) {
     
         // Ajax call to add new user to friends list
         $.post("/api/friends", userInput, function(data) {
+            console.log(data);
+            
     
-            $("#name").text(data.name);
-            $("#photo").attr("src". data.photo);
+            $("#match-name").text(data.name);
+            $("#match-photo").attr("src", data.photo);
             $("#match-modal").modal("toggle");
-                
+
         });
-    } else {
-        // Alert if survey in not complete
-        alert("Incomplete Survey!")
-    }
+    // } else {
+    //     // Alert if survey in not complete
+    //     alert("Incomplete Survey!")
+    // }
 });
