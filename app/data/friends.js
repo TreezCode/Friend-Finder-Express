@@ -61,8 +61,8 @@ var friendsArr = [
             "1",
             "4",
             "5",
-            "1",
-            "1"
+            "4",
+            "2"
         ]
     },
     {
@@ -70,13 +70,13 @@ var friendsArr = [
         photo: "https://gocoderz.com/wp-content/uploads/2018/04/hacking-2275592_1280.jpg",
         scores: [
             "5",
-            "5",
+            "2",
             "3",
             "4",
-            "5",
             "1",
+            "1",
+            "3",
             "4",
-            "5",
             "5",
             "5"
         ]
