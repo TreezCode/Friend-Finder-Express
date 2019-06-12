@@ -6,189 +6,185 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="assets/css/survey.css">
     <title>Coder Buddies | Survey </title>
 </head>
 <body>
     <div class="container">
 
-        <h2 class="mt-3">Survey Questions</h2>
+        <h2 class="text-center mt-3">Survey Questions</h2>
         <hr><br>
         
-        <h3>About You</h3>
-        
-        <!-- User info form start-->
-        <div class="input-field col-md-12">
-            <h4>Name (Required)</h4>
-            <input type="text" id="name-input" class="form-control" placeholder="Name (Required)" required>
-            <br>
-            <h4>Link to Profile Image (Required)</h4>
-            <input type="text" id="photo-input" class="form-control" placeholder="Link to Profile Photo (Required)" required>
+        <div class="about-wrap">
+            <h4>About You</h4>
+            <!-- User info form start-->
+            <div class="input-field col-md-12">
+                <h5>Name (Required)</h5>
+                <input type="text" id="name-input" class="form-control" placeholder="Name (Required)" required>
+                <br>
+                <h5>Link to Profile Image (Required)</h5>
+                <input type="text" id="photo-input" class="form-control" placeholder="Link to Profile Photo (Required)" required>
+            </div>
         </div>
         <!-- User info form end-->
+
         <hr><br>
 
-        <h3>Questionaire</h3>
-
-        <!-- Survey start-->
-        <div class="input-field col-md-12">
-            <h3>Question 1</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q1">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+        <div class="q-wrap">
+            <h4>Questionaire</h4>
+            <!-- Survey start-->
+            <div class="input-field col-md-12">
+                <label for="q1">Does Javascript make your brain jiggle?</label>    
+                <div class="form-group">
+                    <select class="form-control" id="q1">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 2</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q2">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5></h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q2">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 3</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q3">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5>Question 3</h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q3">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 4</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q4">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5>Question 4</h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q4">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 5</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q5">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5>Question 5</h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q5">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 6</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q6">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5>Question 6</h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q6">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 7</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q7">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5>Question 7</h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q7">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 8</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q8">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5>Question 8</h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q8">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 9</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q9">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5>Question 9</h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q9">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <div class="input-field col-md-12">
-            <h3>Question 10</h3>
-            <h4></h4>    
-            <div class="form-group">
-                <select class="form-control" id="q10">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <br>
+    
+            <div class="input-field col-md-12">
+                <h5>Question 10</h5>    
+                <div class="form-group">
+                    <select class="form-control" id="q10">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
             </div>
         </div>
         <!-- Survey end -->
+
         <br><br>
 
         <!-- Submit start -->
@@ -202,10 +198,10 @@
             <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header text-center d-block">
-                    <h4 class="modal-title" id="matchModalLabel">Your New Coder Buddy!🤓</h4>
+                    <h5 class="modal-title" id="matchModalLabel">Your New Coder Buddy!🤓</h5>
                 </div>
                 <div class="modal-body text-center">
-                    <h3 id="match-name"></h3>
+                    <h5 id="match-name"></h5>
                     <img id="match-photo" src="#" alt="Best Match Photo" style="width: 100%">
                 </div>
                 <div class="modal-footer text-center d-block">
