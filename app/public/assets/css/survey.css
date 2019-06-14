@@ -2,12 +2,114 @@
 body {
     background: url(../images/Optimized-codebg.jpg) no-repeat center center fixed;
     background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;    
+}
+
+.navbar-brand {
+    transition: all 1s
+}
+
+.navbar-brand:hover {
+    transform: rotate(720deg) scale(1.2);
+}
+
+.navbar-link {
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+    color: rgb(255, 173, 234);
+    transform: scale(1.2);
+}
+
+.title-wrap,
+.about-wrap,
+.q-wrap {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    color: white;
+    box-shadow: 0px 0px 10px 5px black;
+    padding: 1em
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(252, 125, 220);
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-family: 'Cinzel', serif;
+    color: red;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
-.about-wrap, .q-wrap {
-    background-color: rgba(0, 0, 0, 0.85) !important;
-    box-shadow: 0px 0px 10px 5px black;
-    padding: 1em 1em;
+.q-wrap > .input-field {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+.range-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.range1 {
+    color: #c200ff;
+}
+
+.range2 {
+    color: #ff00c6;
+}
+
+.range3{
+    color: rgb(248, 148, 223);
+}
+
+.btn {
+    font-family: 'Cinzel', serif;
+    color: rgb(160, 2, 2);
+    background: black;
+    border-left: 0.5px solid #ff9494;
+    border-top: 0.5px solid #ff9494;
+    border-right: 0.5px solid red;
+    border-bottom: 0.5px solid red;
+    padding: 0.5em 2em;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    color: rgb(160, 0, 0);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0px rgb(203, 125, 252);
+}
+
+.modal-content {
+    background: url(../images/Optimized-codebg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
 }
 

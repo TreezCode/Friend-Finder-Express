@@ -4,6 +4,35 @@ body {
     background-size: cover;
 }
 
+body, html {
+    height: 100%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;    
+}
+
+.navbar-brand {
+    transition: all 1s
+}
+
+.navbar-brand:hover {
+    transform: rotate(720deg) scale(1.2);
+}
+
+.navbar-link {
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+    color: rgb(255, 173, 234);
+    transform: scale(1.2);
+}
+
 .jumbotron {
     background-color: rgba(0, 0, 0, 0.85) !important;
     margin-top: 2em;
@@ -29,38 +58,28 @@ body {
     letter-spacing: 5px;
 }
 
-.navbar {
-    background-color: rgba(0, 0, 0, 0) !important;    
-}
-
-.navbar-brand {
-    transition: all 1s
-}
-
-.navbar-brand:hover {
-    transform: rotate(720deg)
-}
-
-.navbar-link {
-    margin-left: auto;
-    color: white;
-    text-decoration: none;
-}
-
-.navbar-link:hover {
-    text-decoration: none;
-    color: rgb(255, 173, 234);
-}
 
 .btn {
     font-family: 'Cinzel', serif;
-    color: white;
-    background: rgb(161, 0, 0);
-    border: 0.5px solid white;
+    color: rgb(160, 2, 2);
+    background: black;
+    border-left: 0.5px solid #ff9494;
+    border-top: 0.5px solid #ff9494;
+    border-right: 0.5px solid red;
+    border-bottom: 0.5px solid red;
     padding: 0.5em 2em;
+    transition: all 0.5s;
 }
 
 .btn:hover {
+    color: rgb(160, 0, 0);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0px rgb(203, 125, 252);
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
     color: white;
-    background: rgb(122, 0, 0);
+    letter-spacing: 1px;
+    text-align: center;
 }

@@ -4,221 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat|Press+Start+2P|VT323&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Personal CSS -->
     <link rel="stylesheet" href="assets/css/survey.css">
     <title>Coder Buddies | Survey </title>
 </head>
-<body>
+<body class="d-flex flex-column">
+    <nav class="navbar py-2">
+        <a class="navbar-brand" href="https://treezcode.github.io/">
+            <img src="assets/images/logo_transparent.png" alt="Treez Logo" width="60" height="60">
+        </a>
+        <a class="navbar-link" href="/api/friends"><i class="fas fa-users fa-2x"></i></a>        
+    </nav>
+
     <div class="container">
 
-        <h2 class="text-center mt-3">Survey Questions</h2>
+        <!-- Title start -->
+        <div class="title-wrap">
+            <h2 class="text-center mt-3">Survey Questions</h2>
+        </div>
+        <!-- Title end -->
         <hr><br>
         
-        <div class="about-wrap">
+        <!-- User info form start-->
+        <div class="about-wrap text-center pb-4">
             <h4>About You</h4>
-            <!-- User info form start-->
             <div class="input-field col-md-12">
-                <h5>Name (Required)</h5>
+                <h5><i class="fas fa-user"></i> Name (Required)</h5>
                 <input type="text" id="name-input" class="form-control" placeholder="Name (Required)" required>
                 <br>
-                <h5>Link to Profile Image (Required)</h5>
+                <h5><i class="fas fa-camera"></i> Link to Profile Image (Required)</h5>
                 <input type="text" id="photo-input" class="form-control" placeholder="Link to Profile Photo (Required)" required>
             </div>
         </div>
         <!-- User info form end-->
-
         <hr><br>
 
-        <div class="q-wrap">
+        <!-- Survey start-->
+        <div class="q-wrap pb-3">
             <h4>Questionaire</h4>
-            <!-- Survey start-->
             <div class="input-field col-md-12">
+                <h6>1.</h6>
                 <label for="q1">Does Javascript make your brain jiggle?</label>    
-                <div class="form-group">
-                    <select class="form-control" id="q1">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <input type="range" class="custom-range" min="1" max="5" id="q1">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5></h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q2">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>2.</h6>
+                <label for="q2">Does Hypertext make you hyperventilate?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q2">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5>Question 3</h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q3">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>3.</h6>
+                <label for="q3">You love all coding languages?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q3">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5>Question 4</h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q4">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>4.</h6>
+                <label for="q4">Do you love piña coladas and building application programming interfaces?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q4">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5>Question 5</h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q5">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>5.</h6>
+                <label for="q5">Does Cascading Styling Sheets makes your knees weak?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q5">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5>Question 6</h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q6">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>6.</h6>
+                <label for="q6">You prefer to say no to Node?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q6">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5>Question 7</h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q7">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>7.</h6>
+                <label for="q7">When you hear Ajax, you think of a cleaning supply?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q7">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5>Question 8</h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q8">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>8.</h6>
+                <label for="q8">Sometimes a bug in a snippet of code will make you loose a snippet of sleep?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q8">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5>Question 9</h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q9">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>9.</h6>
+                <label for="q9">You prefer to pronounce GIF as "GIF", not "GIF"?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q9">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
             <br>
     
             <div class="input-field col-md-12">
-                <h5>Question 10</h5>    
-                <div class="form-group">
-                    <select class="form-control" id="q10">
-                        <option value=""></option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
+                <h6>10.</h6>
+                <label for="q10">You code so much you feel you or you're family may be entitled to financial compensation?</label>    
+                <input type="range" class="custom-range" min="1" max="5" id="q10">
+                <div class="range-text">
+                    <span class="range1">Strongly Disagree</span>
+                    <span class="range2">Kind of Agree</span>
+                    <span class="range3">Strongly Agree</span>
                 </div>
             </div>
         </div>
         <!-- Survey end -->
 
-        <br><br>
+        <br>
 
         <!-- Submit start -->
         <div class="text-center mb-3">
-            <button type="submit" class="btn btn-dark btn-lg" id="submit">Submit</button>
+            <button type="submit" class="btn btn-md" id="submit">Submit</button>
         </div>
         <!-- Submit end -->
         
         <!-- Modal start -->
         <div class="modal fade" id="match-modal" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header text-center d-block">
-                    <h5 class="modal-title" id="matchModalLabel">Your New Coder Buddy!🤓</h5>
+                <div class="modal-content">
+                    <div class="modal-header text-center d-block">
+                        <h5 class="modal-title" id="matchModalLabel">Your New Coder Buddy!🤓</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h5 id="match-name"></h5>
+                        <img id="match-photo" src="#" alt="Best Match Photo" style="width: 100%">
+                    </div>
+                    <div class="modal-footer text-center d-block">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <div class="modal-body text-center">
-                    <h5 id="match-name"></h5>
-                    <img id="match-photo" src="#" alt="Best Match Photo" style="width: 100%">
-                </div>
-                <div class="modal-footer text-center d-block">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
             </div>
         </div>
         <!-- Modal end -->
 
     </div>
-
-    <div class="footer">
-        <div class="container">
-            <p class="text-center"><a href="/api/friends">API Friendslist Link</a></p>
-        </div>
+    
+    <!-- Footer start -->
+    <div class="footer  mt-auto">
+        <p class="mb-1">Designed and Coded by ©Treez</p>
     </div>
+    <!-- Footer end -->
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
