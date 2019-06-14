@@ -29,7 +29,7 @@ body, html {
 
 .navbar-link:hover {
     text-decoration: none;
-    color: rgb(255, 173, 234);
+    color: #d042fc;    
     transform: scale(1.2);
 }
 
