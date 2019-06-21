@@ -67,7 +67,7 @@ var friendsArr = [
     },
     {
         name:"Amanda Algorithm",
-        photo: "https://gocoderz.com/wp-content/uploads/2018/04/hacking-2275592_1280.jpg",
+        photo: "https://cdn.inquisitr.com/wp-content/uploads/2016/02/women-better-coders-github-bias.jpg",
         scores: [
             "5",
             "5",
