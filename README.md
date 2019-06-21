@@ -1,7 +1,7 @@
 # Friend-Finder-Express
 
 ## About 📖
-Friend Finder Express is a compatibility-based "FriendFinder" application... basically a dating app. This full-stack site takes in results from your users' surveys, then compares their answers with those from other users. The app then displays the name and picture of the user with the best overall match.
+Friend Finder Express is a compatibility-based "FriendFinder" application... basically a dating app. This *full-stack* website takes in results from a user survey, then compares their answers with those from other users. The app then displays the name and picture of the user with the best overall match.
 
 <img src= "app/public/assets/images/friend-finder.png" alt="Friend Finder" width="100%">
 
@@ -21,11 +21,33 @@ When the user completes the survey successfully, they will be promted with a `mo
 
 <img src= "app/public/assets/images/match.png" alt="Best Match" width="100%">
 
-The user also has the available option to click the *Friends List* icon in the top right corner of the browser. This will direct them to page which displays a JSON of all possible friends.
+The user also has the available option to click the *Friends List* icon in the top right corner of the browser. This will direct them to page a which displays a JSON of all possible friends.
 
 <img src= "app/public/assets/images/friends-list.png" alt="Friends List" width="100%">
 
-## How it Works 🔨 
+## How it Works 🔨
+
+**HTML ROUTES**
+
+`htmlRoutes.js` includes the following two routes:
+
+* A default, catch-all route that directs the user to home.html which displays the home page.
+
+```
+    // Include default catch all route that displays home page
+    app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+    });
+```
+
+* A GET Route to */survey* that directs the user to survey.html which displays survey page. 
+
+```
+    // Include route to display the survey page
+    app.get("/survey", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/survey.html"));
+    });
+```
 
 **API Routes**
 
@@ -116,8 +138,7 @@ The following steps will get you a copy of the application up and running on you
 1. Copy this repository from github by using clone.
 2. Git clone repository in IDE of choice
 3. Navigate to proper directory in IDE
-4. If all pre-requisites are met, initalize the app by typing any of the following commands:
-  * `node server.js`
+4. If all pre-requisites are met, initalize the app by typing the command `node server.js`
 5. ENJOY!
 
 ## Technologies Used 💻
