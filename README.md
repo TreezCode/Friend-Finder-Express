@@ -1,5 +1,7 @@
 # Friend-Finder-Express
 
+<a src="https://friend-finder-treez.herokuapp.com/">Coder Buddies</a>
+
 ## About 📖
 Friend Finder Express is a compatibility-based "FriendFinder" application... basically a dating app. This *full-stack* website takes in results from a user survey, then compares their answers with those from other users. The app then displays the name and picture of the user with the best overall match.
 
@@ -7,7 +9,7 @@ Friend Finder Express is a compatibility-based "FriendFinder" application... bas
 
 ## How to Use 🤔
 
-The user is greeted with a friendly home screen upon visiting the deployed heroku domain : [Coder Buddies!](https://tranquil-chamber-13000.herokuapp.com/).
+The user is greeted with a friendly home screen upon visiting the deployed heroku domain : [Coder Buddies!](https://friend-finder-treez.herokuapp.com/).
 
 This home screen contains a "Survey" button which, when clicked, directs the user to the survey page.
 
