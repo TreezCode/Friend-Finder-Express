@@ -1,6 +1,6 @@
 # Friend-Finder-Express
 
-<a src="https://friend-finder-treez.herokuapp.com/">Coder Buddies</a>
+<a href="https://friend-finder-treez.herokuapp.com/">Coder Buddies</a>
 
 ## About 📖
 Friend Finder Express is a compatibility-based "FriendFinder" application... basically a dating app. This *full-stack* website takes in results from a user survey, then compares their answers with those from other users. The app then displays the name and picture of the user with the best overall match.
